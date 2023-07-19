@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .col {
+      float: left;
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .product {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .product-image {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .product-description {
+      flex: 1;
+      text-align: left;
+      padding: 20px;
+    }
+
+    .cta-button {
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Product Landing Page</h1>
+  </header>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="product">
+            <div class="product-image">
+              <img src="product1.jpg" alt="Product Image 1" width="300">
+            </div>
+            <div class="product-description">
+              <h2>Product Title 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Price: $99</p>
+              <a href="#buy" class="cta-button">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product">
+            <div class="product-image">
+              <img src="product2.jpg" alt="Product Image 2" width="300">
+            </div>
+            <div class="product-description">
+              <h2>Product Title 2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Price: $99</p>
+              <a href="#buy" class="cta-button">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2023 Product Landing Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>
